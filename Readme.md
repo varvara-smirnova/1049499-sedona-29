@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Варвара Смирнова](https://up.htmlacademy.ru/htmlcss/29/user/1049499).
-* Наставник: [Денис Байдаров]{https://htmlacademy.ru/profile/4er}.
+* Наставник: [Денис Байдаров](https://htmlacademy.ru/profile/4er).
 
 ---
 
