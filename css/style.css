@@ -1,0 +1,303 @@
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+  font-display: swap;
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-light-blue: #81b3d2;
+  --bacis-dark-gray: #333333;
+  --basic-light-gray: #eeeeee;
+  --basic-light-brown: #766357;
+  --basic-gray: #a9a9a9;
+
+  --special-brown: #604e43;
+  --special-dark-brown: #503e33;
+  --special-blue: #669ec0;
+  --special-dark-blue: #5496bd;
+  --special-extra-balck: #231F20;
+  --special-gray: #BDBBBC;
+
+
+}
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+ text-decoration: none;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+.main-navigation {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-ligth-blue);
+}
+
+.site-navigation a:active {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a:disabled {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-light-brown);
+  cursor: default;
+}
+
+.reasons-block h2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.reasons-block p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-dark-gray);
+}
+
+.reasons {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+}
+
+.reason-1 p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.feature-item p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-dark-gray);
+}
+
+.reasons .reason-2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+  bacground-color: var(--basic-light-blue);
+}
+
+.reason-2 p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+}
+
+.other-reasons {
+  background-color: var(--basic-ligth-gray);
+}
+
+.reason-list {
+  list-style: none;
+}
+
+.reason-item {
+  text-align: center;
+}
+
+.reason-item h2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.reason-item p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-light-gray);
+}
+
+.motivation-text h2{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.motivation-text p{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.button-find {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.button-find:hover,
+.button-find:focus {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 27px;
+  color: var(--basic-white);
+  background-color: var(--special-blue);
+}
+
+.button-find:active {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 27px;
+  color: var(--basic-white);
+  opacity: 0.3;
+  background-color: var(--special-dark-blue);
+}
+
+.instagram {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.main-footer {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.footer-social{
+  text-align: center;
+}
+
+}
+.social-list ul {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--basic-light-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--special-blue);
+}
+
+.social-button:active {
+  background-color: var(--special-dark-blue);
+}
+
+.copyright p {
+  color: var(--basic-black);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+ }
+
+.copyright a {
+  color: var(--special-extra-black);
+}
+.copyright a:hover,
+.copyright a:focus {
+  color: var(--basic-light-blue);
+}
+
+.copyright a:active {
+  color: var(--special-gray);
+}
