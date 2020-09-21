@@ -128,7 +128,7 @@ img {
   background-color: var(--basic-light-blue);
 }
 
-.reason-1 p {
+.reason-town p {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -157,7 +157,7 @@ img {
   color: var(--basic-dark-gray);
 }
 
-.reasons .reason-2 {
+.reasons .reason-devil {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
@@ -165,7 +165,7 @@ img {
   bacground-color: var(--basic-light-blue);
 }
 
-.reason-2 p {
+.reason-devil p {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -173,7 +173,7 @@ img {
   background-color: var(--basic-light-blue);
 }
 
-.other-reasons {
+.reasons .other {
   background-color: var(--basic-ligth-gray);
 }
 
