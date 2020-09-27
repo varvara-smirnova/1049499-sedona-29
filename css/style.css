@@ -301,3 +301,91 @@ img {
 .copyright a:active {
   color: var(--special-gray);
 }
+
+/* hotels */
+
+.sorting-block h2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.sorting-list ul {
+  list-style: none;
+}
+
+.sorting-list ul:first-child {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sorting-item a {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+.sorting-item a:hover,
+.sorting-item a:focus {
+  color: var(--basic-light-blue);
+}
+
+.sorting-item a:active {
+  color: var(--basic-black);
+}
+
+.hotel-list ul {
+  list-style: none;
+}
+
+.hotel-item h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.hotel-item p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-dark-gray);
+}
+
+.button-more {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+}
+
+.button-reserve {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-brown);
+}
+
+.button-more:hover,
+.button-more:focus {
+  background-color: var(--special-blue);
+}
+
+.button-more:active {
+  background-color: var(--special-dark-blue);
+  opacity: 0.3;
+}
+
+.button-reserve:hover,
+.button-reserve:focus {
+  background-color: var(--special-brown);
+}
+
+.button-reserve:active {
+  background-color: var(--special-dark-brown);
+  opacity: 0.3;
+}
