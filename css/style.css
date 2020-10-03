@@ -68,7 +68,6 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 
 .site-navigation {
@@ -104,6 +103,11 @@ img {
   line-height: 26px;
   color: var(--basic-light-brown);
   cursor: default;
+}
+
+.reasons-block {
+  background-image: url(../img/Shape_1.svg) no-repeat;
+
 }
 
 .reasons-block h2 {
