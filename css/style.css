@@ -105,11 +105,6 @@ img {
   cursor: default;
 }
 
-.reasons-block {
-  background-image: url(../img/Shape_1.svg) no-repeat;
-
-}
-
 .reasons-block h2 {
   font-weight: bold;
   font-size: 21px;
