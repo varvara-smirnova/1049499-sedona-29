@@ -64,6 +64,10 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 /* Grid */
 
 .page {
@@ -89,6 +93,7 @@ img {
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  min-height: 55px;
 }
 
 .main-header-logo {
@@ -100,7 +105,16 @@ img {
 }
 
 .site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
+}
+.site-navigation li:nth-child(3n) {
+  margin-left: 150px;
+}
+
+.site-navigation li:nth-child(4n) {
+  margin-left: 100px;
 }
 
 .site-navigation a {
@@ -167,13 +181,18 @@ img {
 }
 
 .reason-town h2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
   text-align: center;
 }
 
 .reason-town {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 256px;
+  min-height: 256px;
 
 }
 
@@ -181,6 +200,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
+  min-height: 330px;
 }
 
 .feature-item {
@@ -214,7 +234,7 @@ img {
 .reason-devil {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  height: 256px;
+  min-height: 256px;
 }
 
 .reason-devil p {
@@ -242,7 +262,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   background-color: var(--basic-light-gray);
-  height: 256px;
+  min-height: 256px;
   margin: 0;
 }
 
@@ -263,6 +283,10 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-dark-gray);
+}
+
+.motivation-text {
+  min-height: 291px;
 }
 
 .motivation-text h2{
@@ -327,7 +351,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--basic-white);
   color: var(--basic-black);
-  height: 120px;
+  min-height: 120px;
 }
 
 .footer-social{
