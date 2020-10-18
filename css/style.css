@@ -74,14 +74,11 @@ img {
   height: 100%;
 }
 
-.page-body {
+.main-container {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-}
-
-.container {
   width: 1200px;
   margin: 0 auto;
   background-color: var(--basic-white);
@@ -148,6 +145,12 @@ img {
   cursor: default;
 }
 
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .reasons-block h2 {
   text-align: center;
   font-weight: bold;
@@ -190,24 +193,51 @@ img {
 }
 
 .reason-town {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   min-height: 256px;
+}
 
+.reasons .town-text {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.reasons .town-img {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .features-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   min-height: 330px;
+}
+
+.feature-item li:first-child {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.feature-item li:nth-child(2n) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.feature-item li:nth-child(3n) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .feature-item {
   text-align: center;
   padding: 50px;
 }
-
 
 .feature-item h2 {
   font-weight: bold;
@@ -232,9 +262,19 @@ img {
 }
 
 .reason-devil {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   min-height: 256px;
+}
+
+.devil-img {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.devil-text {
+  grid-column-start: 3;
+  grid-row-start: 3;
 }
 
 .reason-devil p {
@@ -258,12 +298,30 @@ img {
 }
 
 .reason-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   background-color: var(--basic-light-gray);
   min-height: 256px;
-  margin: 0;
+}
+
+.reason-item li:first-child {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.reason-item li:nth-child(2n) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.reason-item li:nth-child(3n) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 .reason-item {
