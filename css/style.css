@@ -149,6 +149,7 @@ img {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(100px, 1fr);
 }
 
 .reasons-block h2 {
@@ -194,20 +195,19 @@ img {
 }
 
 .reason-town {
-  min-height: 256px;
+  min-width: 256px;
   background-color: var(--basic-light-blue);
 }
 
-.reasons-town .town-text {
+.town-text {
   grid-column: 1/2;
   grid-row:1/2;
 }
 
-.reasons-town .town-img {
+.town-img {
   grid-column: 2/4;
   grid-row:1/2;
 }
-
 
 .features-list {
   display: grid;
