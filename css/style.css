@@ -195,7 +195,7 @@ img {
 }
 
 .reason-town {
-  min-width: 256px;
+  min-height: 256px;
   background-color: var(--basic-light-blue);
 }
 
@@ -386,7 +386,6 @@ img {
 
 .social-list {
   list-style: none;
-
 }
 
 .social-button {
@@ -424,6 +423,13 @@ img {
 
 /* hotels */
 
+.result {
+  display: grid;
+  grid-template-columns: 1fr 800px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: minmax(100px, 1fr);
+}
+
 .sorting-block h2 {
   font-weight: bold;
   font-size: 21px;
@@ -435,11 +441,27 @@ img {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-  color: var(--basic-black);
+  color: var(--basic-dark-gray);
+}
+
+.sorting-text {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .sorting-list {
+  grid-column: 2/3;
+  grid-row: 1/2;
   list-style: none;
+}
+
+.sorting-list li {
+  display: inline;
+}
+
+.sorting-button {
+  grid-template: 3/4;
+  grid-row: 1/2;
 }
 
 .sorting-item a {
@@ -456,18 +478,60 @@ img {
   color: var(--basic-black);
 }
 
-.hotel-list {
-  list-style: none;
+.img-amara {
+  grid-template: 1/2;
+  grid-row: 2/3;
 }
 
-.hotel-item h3 {
+.text-amara {
+  grid-template: 2/3;
+  grid-row: 2/3;
+}
+
+.ratting-amara {
+  grid-template: 3/4;
+  grid-row: 2/3;
+}
+
+.img-desert {
+  grid-template: 1/2;
+  grid-row: 3/4;
+}
+
+.text-desert {
+  grid-template: 2/3;
+  grid-row: 3/4;
+}
+
+.ratting-desert {
+  grid-template: 3/4;
+  grid-row: 3/4;
+}
+
+.img-villas {
+  grid-template: 1/2;
+  grid-row: 4/5;
+}
+
+.text-villas {
+  grid-template: 2/3;
+  grid-row: 4/5;
+}
+
+.ratting-villas {
+  grid-template: 3/4;
+  grid-row: 4/5;
+}
+
+.hotel h3 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
 }
 
-.hotel-item p {
+.hotel p {
+  display: inline;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
