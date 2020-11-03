@@ -446,9 +446,10 @@ ul {
 .booking-form {
   background-color: var(--basic-white);
   width: 568px;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  position: absolute;
+  margin-top: -86px;
+  margin-left: 316px;
 }
 
 
