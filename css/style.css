@@ -766,12 +766,15 @@ ul {
   min-height: 120px;
   opacity: 0.9;
   width: 1200px;
-  min-height: 120px;
 }
 
 .index-footer {
   margin-top: -130px;
   position: absolute;
+}
+
+.hotels-footer section {
+
 }
 
 .instagram {
@@ -1102,7 +1105,7 @@ ul {
   width: 1056px;
   margin-left: auto;
   margin-right: auto;
-  height: 87px;
+  height: 86px;
   background-image: none;
   display: flex;
 }
@@ -1112,7 +1115,7 @@ ul {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  padding: 30px 0;
+  padding: 29px 0;
 }
 
 .sorting fieldset {
@@ -1159,7 +1162,7 @@ ul {
 }
 
 .sorting {
-  padding: 30px 0;
+  padding: 29px 0;
 }
 
 .sorting-direction {
@@ -1260,7 +1263,7 @@ ul {
 
 .hotel-list li {;
   display: flex;
-  padding: 30px 73px 30px;
+  padding: 28px 73px 25px;
   border-bottom: 1px solid var(--special-focus-gray);
 }
 
@@ -1324,9 +1327,9 @@ ul {
 .stars img {
   display: inline-block;
   margin-left: 1px;
-  margin-top: -50px;
+  margin-top: -43px;
   vertical-align: baseline;
-  padding-bottom: 47px;
+  padding-bottom: 43px;
 }
 
 .rating {
