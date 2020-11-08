@@ -110,7 +110,7 @@ ul {
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -69px;
+  margin-left: -66px;
   z-index: 1;
 }
 
@@ -243,7 +243,8 @@ ul {
   color: var(--basic-black);
   margin-bottom: 41px;
   margin-top: -12px;
-
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .reasons-town {
@@ -268,7 +269,10 @@ ul {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
   text-align: center;
-  padding: 47px 139px 25px;
+  margin-top: 47px;
+  margin-left: 139px;
+  margin-right: 139px;
+  margin-bottom: 25px;
 }
 
 .town-text .number {
@@ -305,28 +309,16 @@ ul {
   flex-wrap: wrap;
   list-style: none;
   min-height: 330px;
+}
+
+.features-list li {
   margin: 0;
-}
-
-.feature-item {
-  text-align: center;
-  padding-top: 5px;
-}
-
-.feature-item:first-child {
-  padding-left: 11px;
-}
-
-.feature-item:nth-child(2) {
-  padding-left: 5px;
-}
-
-.feature-item:nth-child(3) {
-  padding-top: 0;
+  width: 400px;
 }
 
 .feature-item img {
-  padding-top: 56px;
+  padding-top: 60px;
+  padding-left: 162px;
 }
 
 .feature-item h2 {
@@ -334,16 +326,8 @@ ul {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
-  padding-top: 18px;
-}
-
-.feature-item:nth-child(2) h2 {
+  text-align: center;
   padding-top: 20px;
-  padding-left: 5px;
-}
-
-.feature-item:last-child {
-  padding-right: 3px;
 }
 
 .feature-item p {
@@ -351,13 +335,34 @@ ul {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-dark-gray);
-  padding-top: 26px;
-  padding-left: 5px;
+  text-align: center;
+  padding-top: 25px;
 }
 
-.feature-item:first-child p,
-.feature-item:last-child p {
-  padding-right: 3px;
+.motel {
+  padding-left: 64px;
+  padding-right: 62px;
+}
+
+.burger {
+  padding-left: 57px;
+  padding-right: 59px;
+}
+
+.china {
+  padding-left: 62px;
+  padding-right: 65px;
+}
+
+.feature-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.feature-item.gift {
+  margin-top: -5px;
+}
+.gift img {
+  padding-left: 167px;
 }
 
 .reasons .reason-devil {
@@ -387,10 +392,13 @@ ul {
 .reason-devil h2 {
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
   color: var(--basic-white);
-  padding: 50px 125px 25px;
+  margin-top: 50px;
+  margin-left: 126px;
+  margin-right: 120px;
+  margin-bottom: 25px;
 }
 
 .devil-text .number {
@@ -424,17 +432,10 @@ ul {
   margin-top: 0;
 }
 
-.reason-item {
-  text-align: center;
-  padding-left: 40px;
-}
-
-.reason-item:nth-child(2) {
-  margin-left: 18px;
-}
-
-.reason-item:last-child {
-  padding-right: 21px;
+.reason-list li {
+  margin: 0;
+  width: 400px;
+  align-content: center;
 }
 
 .reason-item h2 {
@@ -442,8 +443,16 @@ ul {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
-  padding-top: 48px;
-  padding-bottom: 25px;
+  margin-top: 48px;
+  margin-bottom: 25px;
+  text-align: center;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.few {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .reason-item p {
@@ -451,11 +460,28 @@ ul {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-dark-gray);
+  text-align: center;
+}
+
+.close {
+  padding-left: 85px;
+  padding-right: 84px;
+}
+
+.vegas {
+  padding-left: 65px;
+  padding-right: 74px;
+}
+
+.canyon{
+  padding-left: 74px;
+  padding-right: 77px;
 }
 
 .reason-item .third,
 .reason-item .fourth,
 .reason-item .fifth {
+  text-align: center;
   padding-bottom: 23px;
 }
 
@@ -478,7 +504,9 @@ ul {
   line-height: 21px;
   text-align: center;
   color: var(--basic-black);
-  padding-top: 34px;
+  padding-top: 32px;
+  margin-left:  383px;
+  margin-right: 382px;
 }
 
 .booking-form {
@@ -757,6 +785,7 @@ ul {
   cursor: pointer;
 }
 
+
 .main-footer {
   display: flex;
   align-items: center;
@@ -769,23 +798,21 @@ ul {
 }
 
 .index-footer {
-  margin-top: -130px;
   position: absolute;
+  top: 2642px;
 }
 
-.hotels-footer section {
-
+.main-footer section {
+  width: 400px;
 }
 
 .instagram {
-  display: inline-block;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
   text-align: center;
-  margin: 0;
-  padding-left: 80px;
+  padding-left:
 }
 
 .phone {
@@ -793,8 +820,7 @@ ul {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
-  margin: 0;
-  padding-left: 34px;
+  padding-left: 125px;
 }
 
 .footer-social{
@@ -803,12 +829,12 @@ ul {
 
 .footer-social ul{
   display: flex;
-  width: 150px;
+  width: 120px;
   justify-content: space-between;
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .social-button {
@@ -833,7 +859,7 @@ ul {
 .copyright {
   display: flex;
   padding-top: 10px;
-  padding-right: 50px;
+  padding-left: 10px;
 }
 
 .copyright p {
