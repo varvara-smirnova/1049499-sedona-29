@@ -47,7 +47,7 @@
 /* Global */
 
 body {
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -66,14 +66,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-p,
-h1,
-h2,
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 .visually-hidden {
@@ -124,27 +116,37 @@ ul {
   list-style: none;
 }
 
+.site-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
   text-align: left;
+  margin: 0;
+  padding: 0;
   margin-right: auto;
 }
 
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
   text-align: right;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation li {
   width: 300px;
-  box-sizing: border-box;
 }
 
 .site-navigation a {
-  display: inline-block;
   vertical-align: middle;
   padding: 15px 5px;
-  box-sizing: border-box;
+}
+
+.nav-item a{
+  align-self: baseline;
 }
 
 .nav-item:nth-child(1) a {
@@ -231,8 +233,9 @@ ul {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-dark-gray);
+  margin: 0;
+  padding: 0;
   padding-bottom: 52px;
-
 }
 
 .reasons-block h2 {
@@ -241,6 +244,8 @@ ul {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
   margin-bottom: 41px;
   margin-top: -12px;
   margin-left: 300px;
@@ -260,6 +265,8 @@ ul {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
   align-self: center;
+  margin: 0;
+  padding: 0;
 }
 
 .town-text h2 {
@@ -269,6 +276,8 @@ ul {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
   text-align: center;
+  margin: 0;
+  padding: 0;
   margin-top: 47px;
   margin-left: 139px;
   margin-right: 139px;
@@ -311,8 +320,12 @@ ul {
   min-height: 330px;
 }
 
-.features-list li {
+.features-list  {
   margin: 0;
+  padding: 0;
+}
+
+.features-list li {
   width: 400px;
 }
 
@@ -327,7 +340,7 @@ ul {
   line-height: 21px;
   color: var(--basic-black);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 2px;
 }
 
 .feature-item p {
@@ -336,7 +349,7 @@ ul {
   line-height: 21px;
   color: var(--basic-dark-gray);
   text-align: center;
-  padding-top: 25px;
+  padding-top: 7px;
 }
 
 .motel {
@@ -387,6 +400,8 @@ ul {
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
+  margin: 0;
+  padding: 0;
 }
 
 .reason-devil h2 {
@@ -395,6 +410,8 @@ ul {
   font-weight: bold;
   text-align: center;
   color: var(--basic-white);
+  margin: 0;
+  padding: 0;
   margin-top: 50px;
   margin-left: 126px;
   margin-right: 120px;
@@ -431,9 +448,14 @@ ul {
   min-height: 256px;
   margin-top: 0;
 }
+.reason-list {
+  margin: 0;
+  padding: 0;
+}
 
 .reason-list li {
   margin: 0;
+  padding: 0;
   width: 400px;
   align-content: center;
 }
@@ -443,6 +465,8 @@ ul {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
   margin-top: 48px;
   margin-bottom: 25px;
   text-align: center;
@@ -454,6 +478,7 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 
 .reason-item p {
   font-weight: normal;
@@ -482,7 +507,7 @@ ul {
 .reason-item .fourth,
 .reason-item .fifth {
   text-align: center;
-  padding-bottom: 23px;
+  padding-bottom: 10px;
 }
 
 .booking-header {
@@ -495,6 +520,8 @@ ul {
   line-height: 24px;
   text-align: center;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
   padding-top: 58px;
 }
 
@@ -504,9 +531,15 @@ ul {
   line-height: 21px;
   text-align: center;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
   padding-top: 32px;
   margin-left:  383px;
   margin-right: 382px;
+}
+
+.map img {
+  display: block;
 }
 
 .booking-form {
@@ -663,6 +696,8 @@ ul {
 }
 
 .booking-list li {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
   width: 460px;
 }
@@ -700,6 +735,8 @@ ul {
 }
 
 .booking-list li:nth-child(2)::after {
+  margin: 0;
+  padding: 0;
   right: 10px;
   top: 75px;
 }
@@ -751,6 +788,8 @@ ul {
   width: 228px;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .adults-form,
@@ -778,13 +817,16 @@ ul {
   width: 458px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 23px;
+  margin-top: 55px;
   margin-bottom: 55px;
   padding-top: 16px;
   padding-bottom: 16px;
   cursor: pointer;
 }
 
+.page-footer {
+  position: relative;
+}
 
 .main-footer {
   display: flex;
@@ -795,16 +837,21 @@ ul {
   min-height: 120px;
   opacity: 0.9;
   width: 1200px;
+  box-sizing: 300px;
 }
 
 .index-footer {
   position: absolute;
-  top: 2642px;
+  bottom: 0;
 }
 
-.main-footer section {
-  width: 400px;
+.contact  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
 }
+
 
 .instagram {
   font-weight: bold;
@@ -812,7 +859,9 @@ ul {
   line-height: 26px;
   color: var(--basic-black);
   text-align: center;
-  padding-left:
+  padding: 0;
+  margin: 0;
+  align-self: center;
 }
 
 .phone {
@@ -820,21 +869,16 @@ ul {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
-  padding-left: 125px;
-}
-
-.footer-social{
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social ul{
   display: flex;
   width: 120px;
-  justify-content: space-between;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   list-style: none;
-  padding-right: 5px;
 }
 
 .social-button {
@@ -858,8 +902,7 @@ ul {
 
 .copyright {
   display: flex;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 0;
 }
 
 .copyright p {
@@ -868,6 +911,8 @@ ul {
   font-size: 14px;
   line-height: 26px;
   text-align: left;
+  margin: 0;
+  padding: 0;
   padding-top: 10px;
  }
 
@@ -876,13 +921,14 @@ ul {
   display: block;
   margin-left: 8px;
 }
+
 .copyright a:hover,
 .copyrighta a:focus {
-  color: var(--basic-light-blue);
+  fill: var(--basic-light-blue);
 }
 
 .copyright a:active {
-  color: var(--special-gray);
+  fill: var(--special-gray);
 }
 
 /* hotels */
@@ -907,7 +953,6 @@ ul {
   margin: 0;
   padding: 0;
   margin-right: 79px;
-  margin-bottom: 2px;
 }
 
 .filter-hotels label {
@@ -1085,7 +1130,7 @@ ul {
 .range-toggle {
   width: 4px;
   height: 4px;
-  background: var(--special-rage-gray);
+  background: var(--special-range-gray);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
@@ -1095,7 +1140,7 @@ ul {
 }
 
 .range-toggle:hover {
-  background: var(--special-rage-gray);
+  background: var(--special-range-gray);
   transform: scale(1.2);
 }
 
@@ -1245,6 +1290,7 @@ ul {
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
+
 }
 
 .hotel-item h3 {
@@ -1252,6 +1298,7 @@ ul {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+
 }
 
 .hotel-item p {
@@ -1260,11 +1307,13 @@ ul {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-dark-gray);
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -1289,12 +1338,15 @@ ul {
 
 .hotel-list li {;
   display: flex;
+  margin: 0;
+  padding: 0;
   padding: 28px 73px 25px;
   border-bottom: 1px solid var(--special-focus-gray);
 }
 
 .hotel-list li:first-child {
   border-top: 1px solid var(--special-focus-gray);
+
 }
 
 .hotel-price,
@@ -1322,10 +1374,24 @@ ul {
   padding-left: 60px;
 }
 
+.hotel-price.villas {
+  padding-left: 20px;
+}
+
 .hotel-item {
   width: 260px;
   margin-left: 30px;
   position: relative;
+}
+
+.hotel-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-item h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-item .button-more,
@@ -1350,6 +1416,16 @@ ul {
   text-align: right;
 }
 
+.rating {
+  display: block;
+  width: 110px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  padding-left: 522px;
+}
+
 .stars img {
   display: inline-block;
   margin-left: 1px;
@@ -1358,21 +1434,14 @@ ul {
   padding-bottom: 43px;
 }
 
-.rating {
-  display: block;
-  width: 110px;
-  text-align: center;
-  margin: 0;
-  margin-top: 40px;
-  padding-left: 522px;
-}
-
 .hotel-rating {
   background-color: var(--special-rating-gray);
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   color: var(--special-rating-black);
+  padding: 3px;
+  margin-top: -7px;
 }
 
 .button-more {
