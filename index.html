@@ -26,7 +26,7 @@
       </header>
       <main>
         <section class="reasons-block">
-          <h1 class="visually-hidden">Sedona</h1>
+          <h1 class="visually-hidden">Седона</h1>
           <div class="welcome">
             <img src="img/welcome.svg" width="459" height="353"
               alt="Welcome to the gorgeous SEDONA 'because the grand canyon sucks'">
@@ -35,7 +35,7 @@
           <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
-        <div class="container">
+        <div class="container"
           <div class="reason-town">
             <div class="town-text">
               <h2>Настоящий городок</h2>
@@ -100,20 +100,22 @@
             <p>Укажите предпологаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
           <div class="booking-form">
-            <button class="hotel-search" type="button">Поиск гостиницы в Седоне</button>
+            <button class="hotel-search" aria-label="Поиск гостиницы в Седоне"
+              type="button">Поиск гостиницы в Седоне
+            </button>
             <form action="#" method="get">
               <ul class="booking-list">
                 <li class="booking-item">
-                  <button class="calendar-button calendar-button-check-in" type="button">
-                    <p class="visually-hidden">Кнопка выбора даты заезда</p>
+                  <button class="calendar-button calendar-button-check-in"
+                    aria-label="Кнопка выбора даты заезда" type="button">
                   </button>
                   <label class="item-name">Дата заезда:
                     <input type="text" name="check-in" placeholder="24 апреля 2017">
                   </label>
                 </li>
                 <li class="booking-item">
-                  <button class="calendar-button calendar-button-check-out" type="button">
-                    <p class="visually-hidden">Кнопка выбора даты выезда</p>
+                  <button class="calendar-button calendar-button-check-out"
+                    aria-label="Кнопка выбора даты выезда" type="button">
                   </button>
                   <label class="item-name">Дата выезда:
                     <input type="text" name="check-out" placeholder="4 июля 2017">
@@ -122,34 +124,31 @@
                 <li class="booking-item">
                   <label for="adults" class="item-name">Взрослые:</label>
                   <div class="adults-form">
-                    <button class="quantity-button minus" type="button">
-                      <p class="visually-hidden">Кнопка меньше</p>
+                    <button class="quantity-button minus" aria-label="Кнопка меньше" type="button">
                     </button>
                     <input id="adults" type="text" name="number-of-adults" placeholder="2">
-                    <button class="quantity-button plus" type="button">
-                      <p class="visually-hidden">Кнопка больше</p>
+                    <button class="quantity-button plus" aria-label="Кнопка больше" type="button">
                     </button>
                   </div>
                 </li>
                 <li class="booking-item">
                   <label for="kids" class="item-name">Дети:</label>
                   <div class="kids-form">
-                    <button class="quantity-button minus" type="button">
-                      <p class="visually-hidden">Кнопка меньше</p>
+                    <button class="quantity-button minus" aria-label="Кнопка меньше" type="button">
                     </button>
                     <input id="kids" type="text" name="number-of-kids" placeholder="0">
-                    <button class="quantity-button plus" type="button">
-                      <p class="visually-hidden">Кнопка больше</p>
+                    <button class="quantity-button plus" aria-label="Кнопка больше" type="button">
                     </button>
                   </div>
                 </li>
               </ul>
-              <button class="search-button" type="submit">Найти</button>
+              <button class="search-button" aria-label="Кнопка найти" type="submit">Найти</button>
             </form>
           </div>
           <div class="map">
-          <img src="img/map.jpg"  width="1199" height="594"
-          alt="Карта">
+            <h3 class="visually-hidden">Карта</h3>
+            <img src="img/map.jpg"  width="1199" height="594"
+            alt="Карта">
           </div>
         </div>
       </main>
@@ -165,22 +164,23 @@
             <ul class="social-list">
               <li>
                 <a class="social-button" href="#">
-                  <img src="img/twitter.svg" width="17" heigth="17" alt="twitter">
+                  <img src="img/twitter.svg" width="17" height="17" alt="twitter">
                 </a>
               </li>
               <li>
                 <a class="social-button" href="#">
-                  <img src="img/facebook.svg" width="12" heigth="22" alt="facebook">
+                  <img src="img/facebook.svg" width="12" height="22" alt="facebook">
                 </a>
               </li>
               <li>
                 <a class="social-button" href="#">
-                    <img src="img/youtube.svg" width="20" heigth="18" alt="youtube">
+                    <img src="img/youtube.svg" width="20" height="18" alt="youtube">
                 </a>
               </li>
             </ul>
           </section>
           <section class="copyright">
+            <h3 class="visually-hidden">Разработано htmlacademy</h3>
             <p>WEBSITE BY</p>
             <a class="copyright-button" href="https://htmlacademy.ru/">
               <svg width="115" height="41" viewBox="0 0 115 41" fill="none" xmlns="http://www.w3.org/2000/svg">
