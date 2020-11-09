@@ -35,7 +35,7 @@
           <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
-        <div class="container"
+        <div class="container">
           <div class="reason-town">
             <div class="town-text">
               <h2>Настоящий городок</h2>
@@ -103,52 +103,55 @@
             <button class="hotel-search" aria-label="Поиск гостиницы в Седоне"
               type="button">Поиск гостиницы в Седоне
             </button>
-            <form action="#" method="get">
-              <ul class="booking-list">
-                <li class="booking-item">
-                  <button class="calendar-button calendar-button-check-in"
-                    aria-label="Кнопка выбора даты заезда" type="button">
-                  </button>
-                  <label class="item-name">Дата заезда:
-                    <input type="text" name="check-in" placeholder="24 апреля 2017">
-                  </label>
-                </li>
-                <li class="booking-item">
-                  <button class="calendar-button calendar-button-check-out"
-                    aria-label="Кнопка выбора даты выезда" type="button">
-                  </button>
-                  <label class="item-name">Дата выезда:
-                    <input type="text" name="check-out" placeholder="4 июля 2017">
-                  </label>
-                </li>
-                <li class="booking-item">
-                  <label for="adults" class="item-name">Взрослые:</label>
-                  <div class="adults-form">
-                    <button class="quantity-button minus" aria-label="Кнопка меньше" type="button">
+            <div class="modal-show">
+              <form action="#" method="get">
+                <ul class="booking-list">
+                  <li class="booking-item">
+                    <button class="calendar-button calendar-button-check-in"
+                      aria-label="Кнопка выбора даты заезда" type="button">
                     </button>
-                    <input id="adults" type="text" name="number-of-adults" placeholder="2">
-                    <button class="quantity-button plus" aria-label="Кнопка больше" type="button">
+                    <label class="item-name">Дата заезда:
+                      <input type="text" name="check-in" placeholder="24 апреля 2017">
+                    </label>
+                  </li>
+                  <li class="booking-item">
+                    <button class="calendar-button calendar-button-check-out"
+                      aria-label="Кнопка выбора даты выезда" type="button">
                     </button>
-                  </div>
-                </li>
-                <li class="booking-item">
-                  <label for="kids" class="item-name">Дети:</label>
-                  <div class="kids-form">
-                    <button class="quantity-button minus" aria-label="Кнопка меньше" type="button">
-                    </button>
-                    <input id="kids" type="text" name="number-of-kids" placeholder="0">
-                    <button class="quantity-button plus" aria-label="Кнопка больше" type="button">
-                    </button>
-                  </div>
-                </li>
-              </ul>
-              <button class="search-button" aria-label="Кнопка найти" type="submit">Найти</button>
-            </form>
+                    <label class="item-name">Дата выезда:
+                      <input type="text" name="check-out" placeholder="4 июля 2017">
+                    </label>
+                  </li>
+                  <li class="booking-item">
+                    <label for="adults" class="item-name">Взрослые:</label>
+                    <div class="adults-form">
+                      <button class="quantity-button minus" aria-label="Кнопка меньше" type="button">
+                      </button>
+                      <input id="adults" type="text" name="number-of-adults" placeholder="2">
+                      <button class="quantity-button plus" aria-label="Кнопка больше" type="button">
+                      </button>
+                    </div>
+                  </li>
+                  <li class="booking-item">
+                    <label for="kids" class="item-name">Дети:</label>
+                    <div class="kids-form">
+                      <button class="quantity-button minus" aria-label="Кнопка меньше" type="button">
+                      </button>
+                      <input id="kids" type="text" name="number-of-kids" placeholder="0">
+                      <button class="quantity-button plus" aria-label="Кнопка больше" type="button">
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+                <button class="search-button" aria-label="Кнопка найти" type="submit">Найти</button>
+              </form>
+            </div>
           </div>
           <div class="map">
             <h3 class="visually-hidden">Карта</h3>
-            <img src="img/map.jpg"  width="1199" height="594"
-            alt="Карта">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695960.334991968!2d-112.03572626576705!3d34.846962880030084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1545160839565"
+               width="1200" height="590" style="border:0" allowfullscreen>
+            </iframe>
           </div>
         </div>
       </main>
@@ -191,5 +194,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

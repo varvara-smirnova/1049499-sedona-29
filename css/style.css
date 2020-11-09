@@ -539,6 +539,10 @@ img {
   display: block;
 }
 
+.map iframe {
+  border: none;
+}  
+
 .booking-form {
   background-color: var(--basic-white);
   width: 568px;
@@ -1485,4 +1489,106 @@ a:active svg {
 .button-reserve:active {
   background-color: var(--special-dark-brown);
   opacity: 0.3;
+}
+
+.modal-search-form {
+    display: none;
+    position: absolute;
+    background-color: var(--basic-white);
+}
+
+.modal-show {
+    display: block;
+    -webkit-animation: bounce 0.7s;
+            animation: bounce 0.7s;
+    position: absolute;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-400px);
+                transform: translateY(-400px);
+    }
+
+    25% {
+        -webkit-transform: translateY(-350px);
+                transform: translateY(-350px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-400px);
+                transform: translateY(-400px);
+    }
+
+    25% {
+        -webkit-transform: translateY(-350px);
+                transform: translateY(-350px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+}
+
+.modal-error {
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
 }
