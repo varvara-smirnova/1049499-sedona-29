@@ -197,7 +197,7 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: var(--basic-light-brown);
+  color: rgba(118,99,87,1);
   cursor: default;
 }
 
@@ -547,7 +547,7 @@ img {
   margin-right: 382px;
 }
 
-.map img {
+.map {
   display: block;
   height: 590px;
   background-image: url(../img/map.jpg);
@@ -588,9 +588,8 @@ img {
 }
 
 .booking-form .hotel-search:active {
-  color: var(--basic-white);
+  color: rgba(225,225,225,0.3);
   background-color: var(--special-dark-brown);
-  opacity: 0.3;
 }
 
 .booking-form ul {
@@ -670,12 +669,12 @@ img {
 }
 
 .booking-form input:hover {
-  background-color: var(--special-hover-gray);
+  background-color: rgba(235,235,235,1);
 }
 
 .booking-form input:focus {
   list-style: none;
-  background-color: var(--basic-white);
+  background-color: rgba(255,255,255,1);
   border-color: var(--special-focus-gray);
   outline-width: 2px;
   outline-color: var(--special-focus-gray);
@@ -701,8 +700,7 @@ img {
 
 .search-button:active {
   background-color: var(--special-dark-blue);
-  color: var(--basic-white);
-  opacity: 0.3;
+  color: rgba(225,225,225,0.3);
 }
 
 .booking-list {
@@ -913,13 +911,29 @@ img {
   margin-right: 6px;
 }
 
+.twitter svg,
+.facebook svg,
+.youtube svg {
+  fill: var(--basic-white);
+  align-self: center;
+}
+
 .social-button:hover,
 .social-button:focus {
   background-color: var(--special-blue);
 }
 
+.social-button:hover svg,
+.social-button:focus svg {
+  fill: var(--basic-white);
+}
+
 .social-button:active {
   background-color: var(--special-dark-blue);
+}
+
+.social-button:active svg {
+  fill: rgba(225,225,225,0.3);
 }
 
 .copyright {
@@ -958,8 +972,10 @@ a:active svg {
 
 /* hotels */
 
-.active-page {
+.active-page  {
   color: var(--basic-light-brown);
+  margin: 0;
+  padding: 0;
 }
 
 .filter-hotels{
@@ -1045,7 +1061,7 @@ a:active svg {
   background-repeat: no-repeat;
 }
 
-.filter-option-inactive label::before {
+.filter-option:disabled label::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -1056,7 +1072,7 @@ a:active svg {
   background-repeat: no-repeat;
 }
 
-.filter-input-inactive:checked + label::before {
+.filter-input:checked:disabled + label::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -1155,6 +1171,7 @@ a:active svg {
 }
 
 .range-toggle {
+  display: block;
   width: 4px;
   height: 4px;
   background: var(--special-range-gray);
@@ -1164,6 +1181,7 @@ a:active svg {
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   position: absolute;
   top: -9px;
+  padding: 2px;
 }
 
 .range-toggle:hover {
@@ -1495,7 +1513,7 @@ a:active svg {
 
 .button-more:active {
   background-color: var(--special-dark-blue);
-  opacity: 0.3;
+  color: rgba(255,255,255,0.3);
 }
 
 .button-reserve:hover,
@@ -1505,7 +1523,7 @@ a:active svg {
 
 .button-reserve:active {
   background-color: var(--special-dark-brown);
-  opacity: 0.3;
+  color: rgba(255,255,255,0.3);
 }
 
 .modal-search-form {
@@ -1519,6 +1537,7 @@ a:active svg {
   -webkit-animation: bounce 0.7s;
           animation: bounce 0.7s;
   position: absolute;
+  background-color: var(--basic-white);
 }
 
 @-webkit-keyframes bounce {
