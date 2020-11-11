@@ -972,7 +972,7 @@ a:active svg {
 
 /* hotels */
 
-.active-page  {
+a.active-page  {
   color: var(--basic-light-brown);
   margin: 0;
   padding: 0;
@@ -1061,7 +1061,7 @@ a:active svg {
   background-repeat: no-repeat;
 }
 
-.filter-option:disabled label::before {
+.filter-input:disabled + label::before {
   content: "";
   position: absolute;
   width: 27px;
